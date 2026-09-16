@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shorts-factory</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+    max-width: 680px; margin: 0 auto; padding: 48px 20px 80px;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6edf3; background: #0e1116; } }
+  h1 { font-size: 28px; margin: 0 0 6px; }
+  h2 { font-size: 19px; margin: 36px 0 10px; }
+  .sub { color: #666; margin: 0 0 32px; }
+  @media (prefers-color-scheme: dark) { .sub { color: #8b949e; } }
+  ol, ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 14px; }
+  @media (prefers-color-scheme: dark) { footer { border-color: #262d38; } }
+  a { color: #0969da; }
+  @media (prefers-color-scheme: dark) { a { color: #58a6ff; } }
+</style>
+</head>
+<body>
+
+<h1>shorts-factory</h1>
+<p class="sub">Ferramenta pessoal que transforma vídeos longos do YouTube em cortes verticais legendados.</p>
+
+<h2>O que faz</h2>
+<p>
+  É um programa de linha de comando que roda no computador do próprio usuário. A partir do
+  link de um vídeo do YouTube, ele:
+</p>
+<ol>
+  <li>baixa o vídeo e extrai o áudio;</li>
+  <li>transcreve a fala com marcação de tempo por palavra;</li>
+  <li>escolhe os trechos que funcionam como vídeo curto;</li>
+  <li>recorta em formato vertical (1080x1920) e queima a legenda;</li>
+  <li>gera título, descrição e hashtags para cada corte.</li>
+</ol>
+
+<h2>Integração com o TikTok</h2>
+<p>
+  O usuário pode, opcionalmente, conectar a própria conta do TikTok para enviar os vídeos
+  gerados. Os vídeos são enviados para a <strong>caixa de rascunhos</strong> da conta: nada
+  é publicado automaticamente. A publicação é sempre uma ação manual do usuário dentro do
+  aplicativo do TikTok.
+</p>
+<p>
+  A ferramenta usa apenas dois escopos: <code>user.info.basic</code>, para exibir o nome da
+  conta conectada, e <code>video.upload</code>, para enviar o arquivo aos rascunhos.
+</p>
+
+<h2>Quem usa</h2>
+<p>
+  É uma ferramenta de uso pessoal, operada pelo próprio dono da conta, no computador dele.
+  Não há serviço hospedado, não há cadastro e não há acesso a contas de terceiros.
+</p>
+
+<footer>
+  <a href="privacidade.html">Política de Privacidade</a> ·
+  <a href="termos.html">Termos de Uso</a>
+</footer>
+
+</body>
+</html>

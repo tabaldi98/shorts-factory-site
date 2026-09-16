@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — shorts-factory</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+    max-width: 680px; margin: 0 auto; padding: 48px 20px 80px;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6edf3; background: #0e1116; } }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  .sub { color: #666; margin: 0 0 28px; font-size: 14px; }
+  @media (prefers-color-scheme: dark) { .sub { color: #8b949e; } }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid #ddd; font-size: 14px; }
+  @media (prefers-color-scheme: dark) { footer { border-color: #262d38; } }
+  a { color: #0969da; }
+  @media (prefers-color-scheme: dark) { a { color: #58a6ff; } }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade</h1>
+<p class="sub">shorts-factory — atualizada em 16 de setembro de 2026</p>
+
+<h2>Resumo</h2>
+<p>
+  O shorts-factory é um programa que roda no computador do próprio usuário. Não existe
+  servidor, banco de dados ou cadastro. Nenhuma informação é enviada para nós, porque não
+  há um "nós" recebendo nada: o programa conversa apenas com o computador local e com as
+  APIs oficiais dos serviços que o próprio usuário conectar.
+</p>
+
+<h2>Dados acessados no TikTok</h2>
+<p>Quando o usuário conecta a própria conta, a ferramenta solicita dois escopos:</p>
+<ul>
+  <li><strong>user.info.basic</strong> — lê o nome de exibição da conta, apenas para
+      mostrar na tela qual conta está conectada.</li>
+  <li><strong>video.upload</strong> — envia arquivos de vídeo para a caixa de rascunhos
+      da conta.</li>
+</ul>
+<p>
+  A ferramenta não lê vídeos existentes, não acessa mensagens, não consulta seguidores e
+  não publica nada automaticamente. Os vídeos enviados ficam nos rascunhos até que o
+  usuário decida publicá-los manualmente dentro do aplicativo do TikTok.
+</p>
+
+<h2>Onde os dados ficam</h2>
+<ul>
+  <li>Os tokens de acesso são gravados em um arquivo local, na pasta do programa, no
+      computador do usuário.</li>
+  <li>Os vídeos gerados ficam em uma pasta local.</li>
+  <li>Nada é transmitido para servidores de terceiros além das próprias APIs oficiais
+      usadas para transcrição e publicação, sempre com credenciais do próprio usuário.</li>
+</ul>
+
+<h2>Senhas</h2>
+<p>
+  A ferramenta nunca vê nem armazena senhas. A autenticação acontece no site da própria
+  plataforma, pelo fluxo OAuth padrão. O programa recebe apenas um token de acesso.
+</p>
+
+<h2>Compartilhamento</h2>
+<p>
+  Nenhum dado é vendido, cedido ou compartilhado com terceiros. Não há publicidade, não há
+  rastreamento e não há analytics.
+</p>
+
+<h2>Como revogar o acesso</h2>
+<p>
+  O usuário pode desconectar a ferramenta a qualquer momento nas configurações do TikTok,
+  em <em>Configurações e privacidade → Segurança e permissões → Gerenciar permissões de
+  aplicativos</em>. Também pode apagar o arquivo local de tokens, o que invalida o uso pelo
+  programa imediatamente.
+</p>
+
+<h2>Retenção</h2>
+<p>
+  Como todos os dados ficam no computador do usuário, a exclusão é feita por ele, apagando
+  os arquivos. Não há cópia em nenhum outro lugar.
+</p>
+
+<h2>Contato</h2>
+<p>
+  Dúvidas sobre esta política: <a href="https://github.com/tabaldi98/shorts-factory-site/issues">abra uma issue no repositório do projeto</a>
+</p>
+
+<footer>
+  <a href="index.html">Início</a> · <a href="termos.html">Termos de Uso</a>
+</footer>
+
+</body>
+</html>
